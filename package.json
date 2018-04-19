@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "scripts": {
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js  --mode development --watch",
+    "hot": "HOT_ENV=true NODE_ENV=development webpack-dev-server --mode development --hot"
+  },
+  "dependencies": {
+    "axios": "^0.17",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap-sass": "^3.3.7",
+    "cross-env": "^5.1",
+    "exit-hook": "^2.0.0",
+    "file-loader": "^1.1.11",
+    "jquery": "^3.2",
+    "lodash": "^4.17.5",
+    "node-sass": "^4.8.3",
+    "numeral": "^2.0.6",
+    "process": "^0.11.10",
+    "prop-types": "^15.6.1",
+    "re-reselect": "^1.0.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-hot-loader": "^4.0.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "react-hot-loader": "^4.0.1",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
