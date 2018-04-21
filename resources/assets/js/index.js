@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SchoolContainer from './containers/SchoolContainer';
+import AppContainer from "./containers/AppContainer";
 
 if (document.getElementById('school-app')) {
-  ReactDOM.render(<SchoolContainer />, document.getElementById('school-app'));
+  ReactDOM.render(<AppContainer />, document.getElementById('school-app'));
 }
