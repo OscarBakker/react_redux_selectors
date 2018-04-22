@@ -1,17 +1,17 @@
-function memoizeSelection() {
+function memoizeSelection(keyProp) {
   let cache = {};
 
-  return function(locationName, schools) {
-    if(locationName in cache) {
-      return cache[locationName];
+  return function(name, stateProperty) {
+    if(name in cache) {
+      return cache[name];
     } else {
-      const filteredSchools = schools.filter(school => school.location === locationName);
-      cache[locationName] = filteredSchools;
-      return filteredSchools;
+      const cachedProperty = stateProperty.filter(key => key[keyProp] === name);
+      cache[name] = cachedProperty;
+      return cachedProperty;
     }
   }
 }
-const memoizedSelection = memoizeSelection();
-export const selectSchoolsByCountry = (locationName, schools) => {
-  return memoizedSelection(locationName, schools);
+const memoizedSelection = memoizeSelection('location');
+export const selectSchoolsByCountry = (name, stateProperty) => {
+  return memoizedSelection(name, stateProperty);
 };
